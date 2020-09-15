@@ -1,56 +1,101 @@
+  div {
+    width: 50vw;
+    border: 30px solid #11cfd9; 
+    padding: 0px;
+    margin: auto;
+    text-align: center;
+}
+div p {
+  width: 50vw;
+  text-align: center;
+}
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
-figcaption {
-  font-size: 20px;
-  font-style:italic;
-  
-}
-main {
-  display: block;
-}
-body {
-  background-color: #f5eeda;
-  opacity: ;
-  font-size: 40px;
-  text-align: center;
-}
-h1 {
-  color: red;
-  text-align: center;
-    .serif {
-      font-family: "Times New Roman", Times, serif;
+  width: 75vw;
   }
+h1 {
+  text-align: center;
+  color: red;
+  font-size: 5vw
 }
 h2 {
-  color: #09395c;
-  font-size: 35px;
+  text-align: center;
+  color: purple;
+  font-size: 4vw
+}
+body {
+  background: #f0faf9;
+  text-align: center;
+  font-size: 3vw;
+}
+button {
+  height: 30px;
+  width: 100px;
+  color: blue;
+  background: white;
+  margin: 10px;
+}
+button:hover{
+  transition: 1s;
+  color: white;
+  background: blue;
+}
+textarea {
+  height: 25vh;
+  max-height: 35vh;
+  width:30vw;
+  max-width: 35vw;
+  margin: 20px 20px;
+  resize: none;
+  border: 2px solid #11cfd9;
+}
+input[type="text"], input[type="email"], input[type="number"] input[type="checkbox"] {
+  border: none;
+  border-bottom: 2px solid #11cfd9;
+}
+input[type="radio"]{
+  margin-top: -10px;
+}
+#name{
+  margin: 5px 5px;
   text-align: center;
 }
-p {
-  color: black;
-  font-size: 25px;
+#name-label{
   margin-left: 10px;
-  margin-right: 10px;
-  text-align-last: left;
 }
-ul li {
-  font-size: 18px;
-  line-height: 25px;
-  list-style-position: inside;
-  display: flex;
-  text-align: left;
-  margin-left: 350px;
-  margin-right: 300px;
+#email{
+  margin: 5px 5px;
+  text-align: center
 }
-footer {
-  font-size: 15px;
-  text-align: left;
+#email-label{
+  margin-left: 10px;
+}
+#age{
+  margin: 5px 5px;
+  text-align: center;
+}
+#gender{
+  margin: 5px 5px;
+  text-align: center;
+}
+@media (max-width: 400px) {
+  input{
+    width: 10vh;
+  }
+  #number-label{
+    width: 10px;
+  }
+  input[type="radio"] {
+  margin-left: -16px;
+    margin-right: -16px;
+}
+  input[type="checkbox"]{
+    margin-right: -17px;
+    margin-left: -15px;
+  }
+}
+@media (max-width: 500px){
+  font-size: 4px;
 }
