@@ -1,57 +1,50 @@
-<!DOCTYPE html>
-<html lang="en" >
+<!DOCType html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - FCC - Tribute Page</title>
+  <title>CodePen - FCC - Survey</title>
   <link rel="stylesheet" href="./style.css">
-
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-<!DOCType html>
-  <html>
-    <div>
-        <figure id="img-div">
-          <img src= "https://upload.wikimedia.org/wikipedia/commons/c/c2/Steve_Jobs_presents_iPhone.jpg" alt="Steve Jobs" class="center" id="image">
-          <figcaption id="img-caption">Jobs unveiling the iPhone at MacWorld Conference & Expo</figcaption></figure>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+</script>
+  <div>
+  <h1 id="title">Automobile Satisfaction Survey</h1>
+  <h2>What Do You Like About Your Car?</h2>
+    <p id="description"> Tell us about your car.</p><p>What's important to you when buying a car?</p><p>Your answers will help us better serve our customers.</p>
+      <form id="survey-form">
+      <label for="name" id="name-label">Name: </label><input id="name"       type="text" name="name" placeholder="name" required/>
+        
+      <p><label for="email" id="email-label">Email: </label><input               id="email" type="email" name="email address" 
+                                                                   placeholder="email" required/></p>
+      <label for="number" id="number-label">Age: </label><input             id="number" type="number" name="age" min="18"                         max="99" placeholder="age"/>
+        
+      <p>Gender:</p>
+      Male<input type="radio" name="gender" value="male"/><p>
+      Female<input type="radio" name="gender" value="female"/></p>
+      <p>Other<input type="radio" name="gender" value="other"/></p>
+      
+      <p>What Do You Usually Drive?</p>
+        <select name="car" id="dropdown">
+          <option value="none">nothing</option>
+          <option value="car">car</option>
+          <option value="truck">truck</option>
+          <option value="van">van</option>
+          <option value="suv">suv</option>
+        </select>
+        
+        <p>What matters most in a vehicle?</p>
+        <p class="checkbox-inline"><input type="checkbox" name="safety" value="safety"/>Safety
+        <input type="checkbox" name="style" value="style"/>Style
+        <input type="checkbox" name="comfort" value="comfort"/>Comfort</p>
+        <input type="checkbox" name="value" value="value"/>Value
+        <input type="checkbox" name="accessories" value="accessories"/>Accessories
+        <input type="checkbox" name="brand" value="brand"/>Brand
+        
+        <textarea placeholder="Questions, comments, or additional information. Let us know here..."></textarea>
+        
+      <p><button id="submit" type="submit" name="submit">Submit</button></p>
+  </form>
         </div>
-    <head>
-      <title>Steve Jobs - A Short Biography</title>
-    </head>
-    <h1div id="title">Steve Jobs</h1>
-    <h2>A Short Biography</h2>
-    <div id="main">
-    <body>
-    <p id="tribute-info">Steve Jobs, the co-founder of Apple and co-creator of the iPhone had quite a remarkable life. Even though he had dropped out of college, he had an inert intelligence and resourcefullness that conquered technology in ways we never dreamed possible.</p> 
-      <p>Below I highlight the timeline of this great inventor.</p>
-      <ul>
-        <li><strong>1955</strong> - Born in San Francisco, California</li>
-        <li><strong>1971</strong> - Studied at Stanford University</li>
-        <li><strong>1972</strong> - Dropped out of Reed College</li>
-        <li><strong>1974</strong> - Worked as a technician at Atari</li>
-        <li><strong>1976</strong> - Cofounded Apple with Steve Wozniak</li>
-        <li><strong>1979</strong> - Funded The Graphics Group - the computer graphics division of LucasFilm</li>
-        <li><strong>1983</strong> - Developed the Apple Lisa</li>
-        <li><strong>1984</strong> - Developed the Apple Macintosh</li>
-        <li><strong>1985</strong> - Jobs was forced out of Apple and founded NEXT</li>
-        <li><strong>1986</strong> - The Graphics Group becomes PIXAR</li>
-        <li><strong>1997</strong> - Apple aquired NEXT making Jobs CEO within a few months</li>
-        <li><strong>2000</strong> - Jobs became permanent CEO</li>
-        <li><strong>2001</strong> - Jobs was diagnosed with pancreatic cancer</li>
-        <li><strong>2007</strong> - The first touchscreen cellular smartphone, the iPhone is released</li>
-        <li><strong>2010</strong> - The iPad is released</li>
-        <li><strong>2011</strong> - Jobs resigns as CEO due to health complications and makes Tim Cook CEO.</li>
-        <li><strong>2011</strong> - Steve Jobs passes away from complications related to his pancreatic cancer</li>
-      </ul>
-      <p> For a more complete overview of Steve Jobs' life, please read his <a id="tribute-link" href="https://en.wikipedia.org/wiki/Steve_Jobs" target="_blank"> wikipedia page.</a></p>
-    </body>
-    </div>
-    <footer>
-      Image courtesy of <a href="https://www.flickr.com/photos/35448539@N00">Blake Patterson</a> from <a href="https://flickr.com/">Flickr</a> under a <a href="https://creativecommons.org/licenses/by/2.0/">creative commons license</a>
-    </footer>
-  </html>
-<!-- partial -->
-  
 </body>
 </html>
